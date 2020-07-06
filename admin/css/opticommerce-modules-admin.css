@@ -2,3 +2,53 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+#opticommerce-settings {}
+#opticommerce-settings #message {
+    display: none;
+}
+#opticommerce-settings form {
+    margin: 20px 0 0;
+}
+#opticommerce-settings fieldset {
+    margin: 0 0 30px;
+}
+#opticommerce-settings label {
+    font-size: 16px;
+    float: left;
+    margin: -5.5px 0 0 8px;
+}
+#opticommerce-settings input[type="checkbox"] {
+    float: left;
+}
+#opticommerce-settings button[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 15px;
+    font-size: 15px;
+}
+#opticommerce-settings .spinner-btn {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: text-bottom;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+    margin: 0px 0px 0px 10px;
+}
+@-webkit-keyframes spinner-border{
+    to{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
+@keyframes spinner-border{
+    to{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}
